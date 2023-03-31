@@ -9,7 +9,7 @@ app.use(cors());
 app.use(express.json());
 app.use(routes);
 
-const port = 3333;
+const port = 8080;
 const link = `http://localhost:${port}`;
 
 app.listen(port, () => {

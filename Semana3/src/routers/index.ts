@@ -1,10 +1,10 @@
 import { Router } from "express";
 import healthRouter from "./healthRouter";
-import studentsRouter from './studentsRouter'
+import productsRouter from './productsRouter'
 
 const router = Router();
 
-router.use("/health", healthRouter);
-router.use("/students", studentsRouter);
+router.use("/", healthRouter);
+router.use("/students", productsRouter);
 
 export default router;
